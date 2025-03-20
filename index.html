@@ -90,7 +90,7 @@
                 paymentButton.textContent = "Telegram";
                 paymentButton.removeEventListener("click", copyUpiId);
                 paymentButton.addEventListener("click", openPayPalLink);
-                toggleLink.textContent = "Donate via UPI? Click Here";
+                toggleLink.textContent = "Scan to pay";
                 upiAnimation.style.display = "none";
                 qrText.textContent = "Scan with any QR scanning app or use the button";
                 isUpi = false;
@@ -109,7 +109,7 @@
                 paymentButton.textContent = "Copy";
                 paymentButton.removeEventListener("click", openPayPalLink);
                 paymentButton.addEventListener("click", copyUpiId);
-                toggleLink.textContent = "Donate via PayPal? Click Here";
+                toggleLink.textContent = "Scan to pay";
                 upiAnimation.style.display = "block";
                 qrText.textContent = "Scan the QR code or use the UPI ID:";
                 isUpi = true;
