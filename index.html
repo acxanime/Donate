@@ -86,8 +86,8 @@
                 };
 
                 qrImage.src = "assets/paypal_qr.png";
-                paymentId.textContent = "TechifyBots";
-                paymentButton.textContent = "Open PayPal";
+                paymentId.textContent = "@Acxanime";
+                paymentButton.textContent = "Telegram";
                 paymentButton.removeEventListener("click", copyUpiId);
                 paymentButton.addEventListener("click", openPayPalLink);
                 toggleLink.textContent = "Donate via UPI? Click Here";
@@ -129,7 +129,7 @@
                 }, 2500);
             }
             function openPayPalLink() {
-                window.open("https://www.paypal.me/TechifyBots", "_blank");
+                window.open("https://t.me/AcxAnime", "_blank");
             }
             toggleLink.addEventListener("click", function (e) {
                 e.preventDefault();
